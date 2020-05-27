@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML + Bootstrap</title>
-  
-  <!-- HTML -->
-  
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/css/bootstrap.min.css">
+    <title>HTML + Bootstrap</title>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- HTML -->
 
-<body>
-  <div class="container">
-    <h2>Clique na porta para espiar!</h2>
-    <a class="door door1" data-toggle="modal" data-target="#door1Modal">
-    
-      <img src="images/door1.jpg" />
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Clique na porta para espiar!</h2>
+      <a class="door door1" data-toggle="modal" data-target="#door1Modal">
+
+        <img src="images/door1.jpg" />
       </a>
-          <a class="door door2">
-            <img src="images/door2.jpg" />
-          </a>
-  </div>
-  <div class="modal" id="door1Modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Congado</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
+      <a class="door door2"  data-toggle="modal" data-target="#door2Modal">
+        <img src="images/door2.jpg" />
+      </a>
+    </div>
+    <div class="modal" id="door1Modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Congado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://youtube.com/embed/wWy9Msc8SRY" allowfullscreen></iframe>
             </div>
-        </div>
-        <div class="modal-footer">
-          <a type="button" class="btn btn-primary" href="congado.html">Explorar</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-primary" href="congado.html">Explorar</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Project -->
-  <script src="main.js"></script>
-</body>
+
+    <div class="modal" id="door2Modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Quintal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video width="320" height="240" controls>
+                <source src="./images/VID-20200527-WA0003.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-primary" href="quintal.html">Explorar</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project -->
+    <script src="main.js"></script>
+  </body>
 </html>
